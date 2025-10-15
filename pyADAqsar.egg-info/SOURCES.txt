@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+pyADA/__init__.py
+pyADA/__main__.py
+pyADA/cli.py
+pyADA/numpy_compat.py
+pyADA/pyADA.py
+pyADA/utils.py
+pyADAqsar.egg-info/PKG-INFO
+pyADAqsar.egg-info/SOURCES.txt
+pyADAqsar.egg-info/dependency_links.txt
+pyADAqsar.egg-info/entry_points.txt
+pyADAqsar.egg-info/requires.txt
+pyADAqsar.egg-info/top_level.txt

@@ -187,6 +187,12 @@ class Similarity:
         
         AnB, onlyA, onlyB, AuB_0s = Similarity.__coefs(self, vetor1=vetor1, vetor2=vetor2)
         return sqrt( (AnB.sum()  + AuB_0s ) / (onlyA.sum()  + onlyB.sum()  + AnB.sum() + AuB_0s) )
+    
+    def euclidean_similarity(self, vetor1, vetor2):
+        """
+        Alias for euclidian_similarity (correct spelling).
+        """
+        return self.euclidian_similarity(vetor1, vetor2)
    
     def manhattan_similarity(self, vetor1, vetor2):
         """
@@ -195,6 +201,24 @@ class Similarity:
         
         AnB, onlyA, onlyB, AuB_0s = Similarity.__coefs(self, vetor1=vetor1, vetor2=vetor2)
         return (onlyA.sum() + onlyB.sum()) / (onlyA.sum() + onlyB.sum() + AnB.sum() + AuB_0s)
+    
+    def dice_similarity(self, vetor1, vetor2):
+        """
+        Alias for arithmetic_similarity (Dice coefficient).
+        """
+        return self.arithmetic_similarity(vetor1, vetor2)
+    
+    def cosine_similarity(self, vetor1, vetor2):
+        """
+        Alias for geometric_similarity (Cosine similarity).
+        """
+        return self.geometric_similarity(vetor1, vetor2)
+    
+    def jaccard_similarity(self, vetor1, vetor2):
+        """
+        Alias for tanimoto_similarity (Jaccard index).
+        """
+        return self.tanimoto_similarity(vetor1, vetor2)
 
 class ApplicabilityDomain:
     def __init__(self, verbose=False):
